@@ -1,0 +1,216 @@
+/* Base */
+:root {
+  --bg: #0f1220;
+  --text: #f4f6fb;
+  --muted: #c7ccda;
+  --tile-bg: #1a1f36;
+  --tile-ring: rgba(255,255,255,0.2);
+  --accent: #6ea8fe;
+  --backdrop: rgba(0,0,0,0.6);
+  --glow1: rgba(110,168,254,0.35);
+  --glow2: rgba(255,214,102,0.28);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  color: var(--text);
+  background: radial-gradient(1200px 800px at 70% -20%, #151a33 0%, var(--bg) 60%);
+  font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Festive dark overlay: soft bokeh + twinkles */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  inset: -10% -10%;
+  pointer-events: none;
+  z-index: 0;
+}
+body::before {
+  background:
+    radial-gradient(120px 120px at 10% 20%, var(--glow1), transparent 60%),
+    radial-gradient(160px 160px at 80% 10%, var(--glow2), transparent 60%),
+    radial-gradient(140px 140px at 90% 80%, rgba(146, 239, 253, .2), transparent 60%),
+    radial-gradient(180px 180px at 20% 85%, rgba(255, 118, 117, .18), transparent 60%);
+  filter: blur(2px) saturate(110%);
+  animation: floaty 28s linear infinite alternate;
+}
+body::after {
+  background-image:
+    radial-gradient(2px 2px at 10% 20%, rgba(255,255,255,.6), transparent 60%),
+    radial-gradient(2px 2px at 30% 70%, rgba(255,255,255,.5), transparent 60%),
+    radial-gradient(2px 2px at 60% 30%, rgba(255,255,255,.45), transparent 60%),
+    radial-gradient(2px 2px at 85% 50%, rgba(255,255,255,.5), transparent 60%),
+    radial-gradient(2px 2px at 50% 90%, rgba(255,255,255,.5), transparent 60%);
+  opacity: .5;
+  animation: twinkle 4s ease-in-out infinite alternate;
+}
+
+@keyframes floaty { to { transform: translate3d(0, -2%, 0); } }
+@keyframes twinkle { 50% { opacity: .2; } }
+
+/* Hero */
+.hero { padding: 24px 20px 12px; text-align: center; position: relative; z-index: 1; }
+.hero__top { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.hero__title {
+  margin: 0 0 8px;
+  font-size: clamp(28px, 4vw, 44px);
+  letter-spacing: 0.5px;
+}
+.hero__subtitle {
+  margin: 0 auto;
+  color: var(--muted);
+  max-width: 720px;
+}
+
+.hero__banner { width: min(1100px, 94%); margin: 8px auto 0; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,.45); border: 1px solid var(--tile-ring); position: relative; }
+.hero__banner img { display: block; width: 100%; height: auto; aspect-ratio: 32/9; object-fit: cover; }
+.hero__quote {
+  position: absolute;
+  left: 4%; right: 4%; bottom: 8%;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,.6);
+  font-size: clamp(14px, 2.2vw, 22px);
+  font-weight: 400;
+  letter-spacing: .2px;
+  transition: opacity .6s ease, transform .6s ease;
+}
+.hero__quote.is-hidden { opacity: 0; transform: translateY(6px); }
+.hero__actions { display: flex; justify-content: center; gap: 12px; margin-top: 8px; }
+
+/* Gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px 20px 48px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.tile {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: var(--tile-bg);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.tile:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.tile:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,0.35); }
+.tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .18s ease;
+  z-index: 1000;
+}
+.modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: var(--backdrop);
+}
+.modal__content {
+  position: relative;
+  width: min(960px, 92vw);
+  background: #0f1427;
+  border: 1px solid var(--tile-ring);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  background: rgba(0,0,0,0.45);
+  color: var(--text);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 3; /* ensure above video and nav */
+}
+.modal__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(72vh, 70dvh);
+  background: #000;
+}
+.modal__caption {
+  padding: 10px 14px 14px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Modal navigation */
+.modal__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--tile-ring);
+  background: rgba(0,0,0,.45);
+  color: var(--text);
+  font-size: 26px;
+  line-height: 1;
+  display: grid; place-items: center;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  z-index: 2;
+}
+.modal__nav:hover { background: rgba(0,0,0,.6); }
+.modal__nav:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.modal__nav--prev { left: 10px; }
+.modal__nav--next { right: 10px; }
+
+/* Music toggle */
+.music-toggle {
+  margin-left: 8px;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--tile-ring);
+  background: rgba(20,24,44,.6);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform .12s ease, background .2s ease, box-shadow .2s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,.35);
+}
+.music-toggle:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.music-toggle:hover { transform: translateY(-1px); background: rgba(20,24,44,.8); }
+.music-toggle[aria-pressed="true"] { background: rgba(40,60,120,.55); }
+.music-toggle__icon { font-size: 16px; }
+
+@media (min-width: 720px) {
+  .gallery { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1024px) {
+  .gallery { grid-template-columns: repeat(4, 1fr); }
+}

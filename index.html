@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Поздравление • Галерея видео</title>
+    <link rel="stylesheet" href="assets/css/styles.css?v=3" />
+  </head>
+  <body>
+    <header class="hero" role="banner">
+      <div class="hero__top"></div>
+      <p class="hero__subtitle">Нажми на любую фотографию, чтобы посмотреть видео</p>
+      <div class="hero__banner">
+        <img src="assets/photos/hero.svg?v=2" alt="Праздничный баннер" loading="eager" />
+        <div class="hero__quote" id="heroQuote" aria-live="polite"></div>
+      </div>
+      <div class="hero__actions">
+        <button id="randomBtn" class="music-toggle" type="button" title="Случайное видео">
+          <span class="music-toggle__icon" aria-hidden="true">🔀</span>
+          <span class="music-toggle__text">Случайное видео</span>
+        </button>
+        <button id="musicToggle" class="music-toggle" type="button" aria-pressed="false" title="Фоновая музыка">
+          <span class="music-toggle__icon" aria-hidden="true">♪</span>
+          <span class="music-toggle__text">Музыка</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!--
+        Как добавить плитки вручную (если не используете manifest.json):
+        - Кладите фото в assets/photos
+        - Кладите видео в assets/videos
+        - Укажите путь к видео в атрибуте data-video
+        - Укажите путь к фото в src
+      -->
+      <section class="gallery" id="gallery" aria-label="Галерея видео">
+        <!-- Примерные плитки на случай отсутствия манифеста. Будут скрыты, если манифест найден. -->
+        <button class="tile" data-sample="true" data-video="assets/videos/video1.mp4">
+          <img src="assets/photos/sample1.svg" alt="Видео 1" loading="lazy" />
+        </button>
+        <button class="tile" data-sample="true" data-video="assets/videos/video2.mp4">
+          <img src="assets/photos/sample2.svg" alt="Видео 2" loading="lazy" />
+        </button>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__content" role="document">
+        <button class="modal__close" type="button" aria-label="Закрыть" data-close>&times;</button>
+        <button class="modal__nav modal__nav--prev" type="button" aria-label="Предыдущее видео">&#8249;</button>
+        <button class="modal__nav modal__nav--next" type="button" aria-label="Следующее видео">&#8250;</button>
+        <video id="modalVideo" class="modal__video" controls playsinline preload="metadata"></video>
+        <div id="modalCaption" class="modal__caption" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <script defer src="assets/js/quotes.js?v=3"></script>
+    <script defer src="assets/js/main.js?v=3"></script>
+  </body>
+  </html>
