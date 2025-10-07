@@ -243,5 +243,35 @@
     "title": "От Сергея",
     "video": "assets/videos/Ярков.mp4",
     "poster": "assets/photos/Ярков.jpg"
+  },
+  {
+    "title": "От Стахеева",
+    "video": "assets/videos/От Стахеева.mp4",
+    "poster": "assets/photos/От Стахеева.jpg"
+  },
+  {
+    "title": "От Шабаев",
+    "video": "assets/videos/От Шабаев.mp4",
+    "poster": "assets/photos/От Шабаев.jpg"
+  },
+  {
+    "title": "От Шоленберга",
+    "video": "assets/videos/От Шоленберга.mp4",
+    "poster": "assets/photos/От Шоленберга.jpg"
+  },
+  {
+    "title": "От Арвен",
+    "video": "assets/videos/От Арвен.mp4",
+    "poster": "assets/photos/От Арвен.jpg"
+  },
+  {
+    "title": "От Хэппы",
+    "video": "assets/videos/От Хэппы.mp4",
+    "poster": "assets/photos/От Хэппы.jpg"
+  },
+  {
+    "title": "От Юрия Бедрина",
+    "video": "assets/videos/От Юрия Бедрина.mp4",
+    "poster": "assets/photos/От Юрия Бедрина.jpg"
   }
 ]

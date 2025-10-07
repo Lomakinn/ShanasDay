@@ -9,6 +9,9 @@
   const prevBtn = document.querySelector('.modal__nav--prev');
   const nextBtn = document.querySelector('.modal__nav--next');
   const heroQuote = document.getElementById('heroQuote');
+  const volumeWrap = document.getElementById('musicVolumeWrap');
+  const volumeInput = document.getElementById('musicVolume');
+  const volumeValue = document.getElementById('musicVolumeValue');
 
   // Background music
   const AUDIO_SRC = 'assets/audio/music.mp3';
@@ -16,11 +19,25 @@
   bgAudio.src = AUDIO_SRC;
   bgAudio.loop = true;
   bgAudio.preload = 'metadata';
-  bgAudio.volume = 0.1; // default 10%
+  bgAudio.volume = 0.2; // default 20%
   let wasPlayingBeforeModal = false;
   bgAudio.addEventListener('error', () => {
     if (musicToggle) musicToggle.style.display = 'none';
+    if (volumeWrap) volumeWrap.style.display = 'none';
   }, { once: true });
+
+  // Volume slider wiring
+  if (volumeInput && volumeValue) {
+    // Reflect default value from audio
+    const init = Math.round((bgAudio.volume || 0) * 100);
+    volumeInput.value = String(init);
+    volumeValue.textContent = `${init}%`;
+    volumeInput.addEventListener('input', () => {
+      const v = Math.max(0, Math.min(100, parseInt(volumeInput.value || '0', 10)));
+      bgAudio.volume = v / 100;
+      volumeValue.textContent = `${v}%`;
+    });
+  }
 
   if (musicToggle) {
     musicToggle.addEventListener('click', async () => {
@@ -120,6 +137,7 @@
       const data = await res.json();
       const list = Array.isArray(data) ? data : [];
       if (!list.length) return;
+      shuffleArray(list);
       renderTiles(list);
       gallery.querySelectorAll('[data-sample="true"]').forEach(n => n.remove());
       items = buildItemsFromDOM();
@@ -253,6 +271,27 @@
     } catch { return ''; }
   }
 
+  // Fisher–Yates shuffle
+  function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  // Shuffle existing DOM tiles (used when manifest is absent)
+  function shuffleGalleryDOM() {
+    const tiles = Array.from(gallery.querySelectorAll('.tile'));
+    if (!tiles.length) return;
+    shuffleArray(tiles);
+    const frag = document.createDocumentFragment();
+    tiles.forEach(t => frag.appendChild(t));
+    gallery.appendChild(frag);
+  }
+
+  // Randomize existing tiles order on initial load
+  shuffleGalleryDOM();
   items = buildItemsFromDOM();
   loadManifest();
   // Rotate quotes smoothly every N ms

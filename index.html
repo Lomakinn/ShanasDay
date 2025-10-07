@@ -22,6 +22,11 @@
           <span class="music-toggle__icon" aria-hidden="true">♪</span>
           <span class="music-toggle__text">Музыка</span>
         </button>
+        <div class="music-volume" id="musicVolumeWrap">
+          <span class="music-volume__icon" aria-hidden="true">🔊</span>
+          <input id="musicVolume" class="music-volume__range" type="range" min="0" max="100" step="1" value="20" aria-label="Громкость музыки" />
+          <span id="musicVolumeValue" class="music-volume__value" aria-hidden="true">20%</span>
+        </div>
       </div>
 	  <div class="hero__top"></div>
       <p class="hero__subtitle">Нажми на любую фотографию, чтобы посмотреть видео</p>
