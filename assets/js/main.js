@@ -117,6 +117,13 @@
     }
   });
 
+  // Auto-play next video when current ends
+  video.addEventListener('ended', () => {
+    if (currentIndex >= 0 && currentIndex < items.length - 1) {
+      openByIndex(currentIndex + 1);
+    }
+  });
+
   gallery.addEventListener('click', (e) => {
     const tile = e.target.closest('.tile');
     if (!tile || !gallery.contains(tile)) return;
