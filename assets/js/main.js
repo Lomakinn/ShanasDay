@@ -134,11 +134,13 @@
       if (!videoSrc) return;
       const title = obj.title || deriveTitleFromPath(videoSrc) || `Видео ${idx + 1}`;
       const poster = obj.poster || 'assets/photos/sample1.svg';
+      const subtitle = obj.subtitle || '';
 
       const btn = document.createElement('button');
       btn.className = 'tile';
       btn.type = 'button';
       btn.setAttribute('data-video', videoSrc);
+      if (subtitle) btn.setAttribute('data-subtitle', subtitle);
 
       const img = document.createElement('img');
       img.loading = 'lazy';
@@ -146,7 +148,20 @@
       img.src = poster;
       img.addEventListener('error', () => { img.src = 'assets/photos/sample1.svg'; }, { once: true });
 
+      const label = document.createElement('div');
+      label.className = 'tile__label';
+      const t1 = document.createElement('span');
+      t1.className = 'tile__title';
+      t1.textContent = title;
+      const t2 = document.createElement('span');
+      t2.className = 'tile__subtitle';
+      t2.textContent = subtitle;
+      if (!subtitle) t2.style.display = 'none';
+      label.appendChild(t1);
+      label.appendChild(t2);
+
       btn.appendChild(img);
+      btn.appendChild(label);
       frag.appendChild(btn);
     });
     gallery.appendChild(frag);
@@ -159,8 +174,27 @@
       const img = tile.querySelector('img');
       const title = img ? img.getAttribute('alt') : deriveTitleFromPath(src);
       if (src) list.push({ video: src, title });
+      // Enhance overlay for static tiles if not present
+      if (!tile.querySelector('.tile__label')) {
+        enhanceTileOverlay(tile, title, tile.getAttribute('data-subtitle') || '');
+      }
     });
     return list;
+  }
+
+  function enhanceTileOverlay(tile, title, subtitle) {
+    const label = document.createElement('div');
+    label.className = 'tile__label';
+    const t1 = document.createElement('span');
+    t1.className = 'tile__title';
+    t1.textContent = title || '';
+    const t2 = document.createElement('span');
+    t2.className = 'tile__subtitle';
+    t2.textContent = subtitle || '';
+    if (!subtitle) t2.style.display = 'none';
+    label.appendChild(t1);
+    label.appendChild(t2);
+    tile.appendChild(label);
   }
 
   function applyVideoByIndex(idx) {

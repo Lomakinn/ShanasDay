@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="cone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#ffb86b"/>
+    </linearGradient>
+    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7aa8ff"/>
+      <stop offset="1" stop-color="#92effd"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="10" fill="#101426"/>
+
+  <!-- Confetti bursts -->
+  <g>
+    <circle cx="44" cy="10" r="3" fill="#ffd666"/>
+    <circle cx="52" cy="20" r="2.5" fill="#6ea8fe"/>
+    <circle cx="40" cy="22" r="2.5" fill="#ff7a59"/>
+    <rect x="48" y="8" width="3" height="7" rx="1" fill="#8df0c8" transform="rotate(25 49.5 11.5)"/>
+    <rect x="36" y="14" width="3" height="7" rx="1" fill="#ff9bd2" transform="rotate(-20 37.5 17.5)"/>
+  </g>
+
+  <!-- Party popper cone -->
+  <g transform="translate(10,28) rotate(-20)">
+    <path d="M0 0 L22 8 L8 22 Z" fill="url(#cone)"/>
+    <path d="M3 4 L19 10" stroke="url(#stripe)" stroke-width="2.5"/>
+    <path d="M1 9 L17 15" stroke="#ffffff33" stroke-width="2"/>
+  </g>
+
+  <!-- Streamers -->
+  <path d="M36 26 C 40 22, 46 22, 50 26" stroke="#ffd666" stroke-width="2.5" fill="none"/>
+  <path d="M34 30 C 38 26, 44 26, 48 30" stroke="#7aa8ff" stroke-width="2.5" fill="none"/>
+</svg>
+

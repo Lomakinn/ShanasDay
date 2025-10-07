@@ -1,242 +1,247 @@
 [
   {
-    "title": "Аитовы",
+    "title": "От Дюши",
+    "video": "assets/videos/Чепурко.mp4",
+    "poster": "assets/photos/чепурко.jpg"
+  },
+  {
+    "title": "От Вики и Даниила",
     "video": "assets/videos/Аитовы.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Аитовы.jpg"
   },
   {
-    "title": "Арсений",
+    "title": "От Арсения",
     "video": "assets/videos/Арсений.mov",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Арсений.jpg"
   },
   {
-    "title": "Белая",
+    "title": "От Белой",
     "video": "assets/videos/Белая.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Белая.jpg"
   },
   {
-    "title": "Бродяжники",
+    "title": "От Бро и Ирины",
     "video": "assets/videos/Бродяжники.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Бродяжники.jpg"
   },
   {
-    "title": "валькирия",
+    "title": "От Леры",
     "video": "assets/videos/валькирия.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/валькирия.jpg"
   },
   {
-    "title": "Вера Сальницкая",
+    "title": "От Веры",
     "video": "assets/videos/Вера Сальницкая.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Вера Сальницкая.jpg"
   },
   {
-    "title": "Визард",
+    "title": "От Визарда",
     "video": "assets/videos/Визард.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Визард.jpg"
   },
   {
-    "title": "Гамзов",
+    "title": "От Гамзова",
     "video": "assets/videos/Гамзов.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Гамзов.jpg"
   },
   {
-    "title": "Гриша   поздравление для Шаны",
+    "title": "Поздравления от Гришы для Шаны",
     "video": "assets/videos/Гриша - поздравление для Шаны.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Гриша - поздравление для Шаны.jpg"
   },
   {
-    "title": "дедов",
+    "title": "Привет от Дедова",
     "video": "assets/videos/дедов.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/дедов.jpg"
   },
   {
-    "title": "Длинная",
+    "title": "От Длинной",
     "video": "assets/videos/Длинная.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Длинная.jpg"
   },
   {
-    "title": "Дмитрий 2",
+    "title": "От Марии",
     "video": "assets/videos/Дмитрий 2.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Дмитрий 2.jpg"
   },
   {
-    "title": "Дмитрий",
+    "title": "От Дмитрия",
     "video": "assets/videos/Дмитрий.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Дмитрий.jpg"
   },
   {
-    "title": "елистратов",
+    "title": "От Елистратова",
     "video": "assets/videos/елистратов.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/елистратов.jpg"
   },
   {
-    "title": "Есик",
+    "title": "Есик тоже тут",
     "video": "assets/videos/Есик.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Есик.jpg"
   },
   {
-    "title": "женька ломакина",
+    "title": "От Женьки",
     "video": "assets/videos/женька ломакина.MP4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/женька ломакина.jpg"
   },
   {
-    "title": "зенот",
+    "title": "От Зенота",
     "video": "assets/videos/зенот.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/зенот.jpg"
   },
   {
-    "title": "зыкины",
+    "title": "От Четы Зыкиных",
     "video": "assets/videos/зыкины.MOV",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/зыкины.jpg"
   },
   {
-    "title": "квасов",
+    "title": "От Арсения",
     "video": "assets/videos/квасов.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/квасов.jpg"
   },
   {
-    "title": "Коган",
+    "title": "От Когана",
     "video": "assets/videos/Коган.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Коган.jpg"
   },
   {
-    "title": "козина",
+    "title": "От Елены",
     "video": "assets/videos/козина.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/козина.jpg"
   },
   {
-    "title": "корсар",
+    "title": "От Корсара",
     "video": "assets/videos/корсар.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/корсар.jpg"
   },
   {
-    "title": "корсун",
+    "title": "От Корсун",
     "video": "assets/videos/корсун.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/корсун.jpg"
   },
   {
-    "title": "кот",
+    "title": "От КОТа",
     "video": "assets/videos/кот.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/кот.jpg"
   },
   {
-    "title": "крыс",
+    "title": "От Крыса",
     "video": "assets/videos/крыс.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/крыс.jpg"
   },
   {
-    "title": "люба и бегемот",
+    "title": "От Любы и Бегемота",
     "video": "assets/videos/люба и бегемот.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/люба и бегемот.jpg"
   },
   {
-    "title": "Людвиг",
+    "title": "От Людвига",
     "video": "assets/videos/Людвиг.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Людвиг.jpg"
   },
   {
-    "title": "Майонез",
+    "title": "От Юрана",
     "video": "assets/videos/Майонез.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Майонез.jpg"
   },
   {
-    "title": "Мак и Катя",
+    "title": "От Мака и Кати",
     "video": "assets/videos/Мак и Катя.MOV",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Мак и Катя.jpg"
   },
   {
-    "title": "МаксимВалерьич",
+    "title": "От МаксимВалерьич",
     "video": "assets/videos/МаксимВалерьич.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/МаксимВалерьич.jpg"
   },
   {
-    "title": "нагайцев",
+    "title": "От Нагайцева",
     "video": "assets/videos/нагайцев.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/нагайцев.jpg"
   },
   {
-    "title": "Низгурецкий",
+    "title": "От Игоря",
     "video": "assets/videos/Низгурецкий.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Низгурецкий.jpg"
   },
   {
-    "title": "нимай",
+    "title": "От Нимая",
     "video": "assets/videos/нимай.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/нимай.jpg"
   },
   {
-    "title": "писарева",
+    "title": "От Алисы",
     "video": "assets/videos/писарева.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/писарева.jpg"
   },
   {
-    "title": "Руслан",
+    "title": "От Руса",
     "video": "assets/videos/Руслан.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Руслан.jpg"
   },
   {
-    "title": "сова",
+    "title": "От Совы",
     "video": "assets/videos/сова.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/сова.jpg"
   },
   {
-    "title": "стася и пырда",
+    "title": "От Стаси и Пырды",
     "video": "assets/videos/стася и пырда.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/стася и пырда.jpg"
   },
   {
-    "title": "Суханов",
+    "title": "От Суханова",
     "video": "assets/videos/Суханов.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Суханов.jpg"
   },
   {
-    "title": "тётьалла",
+    "title": "От Тёталлы",
     "video": "assets/videos/тётьалла.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/тётьалла.jpg"
   },
   {
-    "title": "торин",
+    "title": "От Торина",
     "video": "assets/videos/торин.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/торин.jpg"
   },
   {
-    "title": "Тычиленко",
+    "title": "От Александра",
     "video": "assets/videos/Тычиленко.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Тычиленко.jpg"
   },
   {
-    "title": "Фарф",
+    "title": "От Фарфа",
     "video": "assets/videos/Фарф.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Фарф.jpg"
   },
   {
-    "title": "фолка",
+    "title": "От Фолки",
     "video": "assets/videos/фолка.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/фолка.jpg"
   },
   {
-    "title": "Хотетовский",
+    "title": "От Яна Хотетовского",
     "video": "assets/videos/Хотетовский.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Хотетовский.jpg"
   },
   {
-    "title": "чернова",
+    "title": "От Анны",
     "video": "assets/videos/чернова.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/чернова.jpg"
   },
   {
-    "title": "Чулковы",
+    "title": "От Паши",
     "video": "assets/videos/Чулковы.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Чулковы.jpg"
   },
   {
-    "title": "ядвига",
+    "title": "От Ядвиги",
     "video": "assets/videos/ядвига.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/ядвига.jpg"
   },
   {
-    "title": "Ярков",
+    "title": "От Сергея",
     "video": "assets/videos/Ярков.mp4",
-    "poster": "assets/photos/sample1.svg"
+    "poster": "assets/photos/Ярков.jpg"
   }
 ]
