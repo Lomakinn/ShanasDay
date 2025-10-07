@@ -52,7 +52,7 @@ body::after {
 @keyframes twinkle { 50% { opacity: .2; } }
 
 /* Hero */
-.hero { padding: 24px 20px 12px; text-align: center; position: relative; z-index: 1; }
+.hero { padding: 24px 20px 12px; text-align: center; position: relative; z-index: 2; }
 .hero__top { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
 .hero__title {
   margin: 0 0 8px;
@@ -95,6 +95,16 @@ body::after {
   width: min(1200px, 100%);
   margin: 0 auto;
 }
+
+/* Constellations canvas layer */
+.sky {
+  position: fixed;
+  inset: 0;
+  z-index: 1; /* above body glows, below content */
+  pointer-events: none;
+}
+
+main { position: relative; z-index: 2; }
 
 .tile {
   appearance: none;
