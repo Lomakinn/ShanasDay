@@ -145,11 +145,6 @@
     "poster": "assets/photos/Майонез.jpg"
   },
   {
-    "title": "От Мака и Кати",
-    "video": "assets/videos/Мак и Катя.MOV",
-    "poster": "assets/photos/Мак и Катя.jpg"
-  },
-  {
     "title": "От МаксимВалерьич",
     "video": "assets/videos/МаксимВалерьич.mp4",
     "poster": "assets/photos/МаксимВалерьич.jpg"
@@ -300,7 +295,7 @@
     "poster": "assets/photos/зыкины.jpg"
   },
   {
-    "title": "Мак и Катя",
+    "title": "От Мака и Кати",
     "video": "assets/videos/Мак и Катя.mp4",
     "poster": "assets/photos/Мак и Катя.jpg"
   },
