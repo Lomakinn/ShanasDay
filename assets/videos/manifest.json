@@ -10,11 +10,6 @@
     "poster": "assets/photos/Аитовы.jpg"
   },
   {
-    "title": "От Арсения",
-    "video": "assets/videos/Арсений.mov",
-    "poster": "assets/photos/Арсений.jpg"
-  },
-  {
     "title": "От Белой",
     "video": "assets/videos/Белая.mp4",
     "poster": "assets/photos/Белая.jpg"
@@ -285,7 +280,7 @@
     "poster": "assets/photos/От Чуев.jpg"
   },
   {
-    "title": "Арсений",
+    "title": "От Арсения",
     "video": "assets/videos/Арсений.mp4",
     "poster": "assets/photos/Арсений.jpg"
   },
@@ -363,5 +358,45 @@
     "title": "От Фроловой",
     "video": "assets/videos/От Фроловой.mp4",
     "poster": "assets/photos/От Фроловой.jpg"
+  },
+  {
+    "title": "От Аронова",
+    "video": "assets/videos/От Аронова.mp4",
+    "poster": "assets/photos/От Аронова.jpg"
+  },
+  {
+    "title": "От Ильенкова",
+    "video": "assets/videos/От Ильенкова.mp4",
+    "poster": "assets/photos/От Ильенкова.jpg"
+  },
+  {
+    "title": "От Кости",
+    "video": "assets/videos/От Кости.mp4",
+    "poster": "assets/photos/От Кости.jpg"
+  },
+  {
+    "title": "От Ларкиной",
+    "video": "assets/videos/От Ларкиной.mp4",
+    "poster": "assets/photos/От Ларкиной.jpg"
+  },
+  {
+    "title": "От Насти",
+    "video": "assets/videos/От Насти.mp4",
+    "poster": "assets/photos/От Насти.jpg"
+  },
+  {
+    "title": "От Паши и Маши",
+    "video": "assets/videos/От Паши и Маши.mp4",
+    "poster": "assets/photos/От Паши и Маши.jpg"
+  },
+  {
+    "title": "От Старлея и Ксюхи",
+    "video": "assets/videos/От Старлея и Ксюхи.mp4",
+    "poster": "assets/photos/От Старлея и Ксюхи.jpg"
+  },
+  {
+    "title": "От Тёмы",
+    "video": "assets/videos/От Тёмы.mp4",
+    "poster": "assets/photos/От Тёмы.jpg"
   }
 ]
