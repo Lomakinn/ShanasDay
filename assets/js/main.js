@@ -12,6 +12,19 @@
   const volumeWrap = document.getElementById('musicVolumeWrap');
   const volumeInput = document.getElementById('musicVolume');
   const volumeValue = document.getElementById('musicVolumeValue');
+  // Bonus video config and persistent state
+  const BONUS_SRC = 'assets/videos/bonus/bonus.mp4';
+  const BONUS_UNLOCK_KEY = 'bonusUnlocked';
+  const WATCHED_KEY = 'watchedVideosV1';
+  let watchedSet;
+  try {
+    const raw = localStorage.getItem(WATCHED_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    watchedSet = new Set(Array.isArray(arr) ? arr : []);
+  } catch (_) {
+    watchedSet = new Set();
+  }
+  let bonusBtn = null;
 
   // Background music
   const AUDIO_SRC = 'assets/audio/music.mp3';
@@ -61,6 +74,60 @@
   let lastActive = null;
   let items = [];
   let currentIndex = -1;
+
+  function saveWatched() {
+    try { localStorage.setItem(WATCHED_KEY, JSON.stringify(Array.from(watchedSet))); } catch(_) {}
+  }
+
+  function ensureBonusButton() {
+    if (bonusBtn) return bonusBtn;
+    const actions = document.querySelector('.hero__actions');
+    if (!actions) return null;
+    const btn = document.createElement('button');
+    btn.id = 'bonusBtn';
+    btn.className = 'music-toggle';
+    btn.type = 'button';
+    btn.title = 'Бонусное видео';
+    const icon = document.createElement('span');
+    icon.className = 'music-toggle__icon';
+    icon.setAttribute('aria-hidden', 'true');
+    icon.textContent = '★';
+    const text = document.createElement('span');
+    text.className = 'music-toggle__text';
+    text.textContent = 'Бонусное видео';
+    btn.appendChild(icon);
+    btn.appendChild(text);
+    btn.addEventListener('click', () => {
+      // Open bonus in modal without enabling navigation
+      currentIndex = -1;
+      openModal(BONUS_SRC, 'Бонусное видео');
+      updateNavState();
+    });
+    actions.appendChild(btn);
+    bonusBtn = btn;
+    return btn;
+  }
+
+  function isAllWatched() {
+    if (!items.length) return false;
+    let count = 0;
+    for (const it of items) {
+      if (watchedSet.has(it.video)) count++;
+    }
+    return count >= items.length;
+  }
+
+  function updateBonusVisibility() {
+    const unlocked = localStorage.getItem(BONUS_UNLOCK_KEY) === 'true';
+    if (unlocked) {
+      ensureBonusButton();
+      return;
+    }
+    if (isAllWatched()) {
+      try { localStorage.setItem(BONUS_UNLOCK_KEY, 'true'); } catch(_) {}
+      ensureBonusButton();
+    }
+  }
 
   function tryPlay() {
     try { video.play().catch(() => {}); } catch (_) {}
@@ -119,6 +186,15 @@
 
   // Auto-play next video when current ends
   video.addEventListener('ended', () => {
+    // Mark current as watched
+    if (currentIndex >= 0 && currentIndex < items.length) {
+      const src = items[currentIndex]?.video;
+      if (src) {
+        watchedSet.add(src);
+        saveWatched();
+        updateBonusVisibility();
+      }
+    }
     if (currentIndex >= 0 && currentIndex < items.length - 1) {
       openByIndex(currentIndex + 1);
     }
@@ -148,6 +224,8 @@
       renderTiles(list);
       gallery.querySelectorAll('[data-sample="true"]').forEach(n => n.remove());
       items = buildItemsFromDOM();
+      // Re-evaluate bonus unlock after manifest load
+      updateBonusVisibility();
     } catch (_) {}
   }
 
@@ -300,6 +378,8 @@
   // Randomize existing tiles order on initial load
   shuffleGalleryDOM();
   items = buildItemsFromDOM();
+  // If bonus already unlocked, show button; otherwise check progress
+  updateBonusVisibility();
   loadManifest();
   // Rotate quotes smoothly every N ms
   if (heroQuote && Array.isArray(window.QUOTES) && window.QUOTES.length) {
