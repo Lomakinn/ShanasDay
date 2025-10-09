@@ -9,6 +9,7 @@
   const prevBtn = document.querySelector('.modal__nav--prev');
   const nextBtn = document.querySelector('.modal__nav--next');
   const heroQuote = document.getElementById('heroQuote');
+  const hero = document.querySelector('.hero');
   const volumeWrap = document.getElementById('musicVolumeWrap');
   const volumeInput = document.getElementById('musicVolume');
   const volumeValue = document.getElementById('musicVolumeValue');
@@ -16,6 +17,10 @@
   const BONUS_SRC = 'assets/videos/bonus/bonus.mp4';
   const BONUS_UNLOCK_KEY = 'bonusUnlocked';
   const WATCHED_KEY = 'watchedVideosV1';
+  const CELEBRATE_KEY = 'celebrationShownV1';
+  const docEl = document.documentElement;
+  let firstVisit = false;
+  try { firstVisit = localStorage.getItem(CELEBRATE_KEY) !== 'true'; } catch(_) { firstVisit = false; }
   let watchedSet;
   try {
     const raw = localStorage.getItem(WATCHED_KEY);
@@ -127,6 +132,66 @@
       try { localStorage.setItem(BONUS_UNLOCK_KEY, 'true'); } catch(_) {}
       ensureBonusButton();
     }
+  }
+
+  // First-visit subtle celebration: floating balloons + small fireworks
+  function triggerCelebration() {
+    try {
+      if (localStorage.getItem(CELEBRATE_KEY) === 'true') return;
+      const wrap = document.createElement('div');
+      wrap.className = 'celebration';
+      const frag = document.createDocumentFragment();
+      // Balloons
+      const BALLOONS = 8;
+      for (let i = 0; i < BALLOONS; i++) {
+        const b = document.createElement('span');
+        b.className = 'balloon';
+        b.textContent = '🎈';
+        const x = 8 + Math.random() * 84; // 8%..92%
+        const dur = 9 + Math.random() * 5; // 9..14s
+        const delay = Math.random() * 1.5; // 0..1.5s
+        b.style.setProperty('--x', x + '%');
+        b.style.setProperty('--dur', dur + 's');
+        b.style.setProperty('--delay', delay + 's');
+        if (Math.random() < 0.4) b.style.opacity = '0.75';
+        frag.appendChild(b);
+      }
+      // Fireworks (very subtle, 2-3 tiny bursts)
+      const FIREWORKS = 5;
+      for (let i = 0; i < FIREWORKS; i++) {
+        const f = document.createElement('span');
+        f.className = 'firework';
+        const x = 15 + Math.random() * 70; // 15%..85%
+        const y = 20 + Math.random() * 40; // 20%..60%
+        const hue = Math.floor(Math.random() * 360) + 'deg';
+        const delay = 0.4 + i * 0.45 + Math.random() * 0.3; // staggered quicker
+        const dur = 1.1 + Math.random() * 0.6;
+        f.style.setProperty('--x', x + '%');
+        f.style.setProperty('--y', y + '%');
+        f.style.setProperty('--hue', hue);
+        f.style.setProperty('--delay', delay + 's');
+        f.style.setProperty('--dur', dur + 's');
+        frag.appendChild(f);
+      }
+      wrap.appendChild(frag);
+      document.body.appendChild(wrap);
+      // Sequential reveal: hero then gallery, while celebration continues
+      if (hero) {
+        setTimeout(() => { hero.classList.remove('is-seq-hidden'); }, 1200);
+        // Reveal actions, then gently transition header to top
+        setTimeout(() => { hero.classList.remove('is-pre'); }, 2000);
+        // Fade out, switch layout, fade in to avoid jump
+        setTimeout(() => { hero.classList.add('is-fade-out'); }, 3000);
+        setTimeout(() => { hero.classList.remove('is-centered'); hero.classList.remove('is-fade-out'); }, 3550);
+      }
+      if (gallery) {
+        // 4s delay before video grid shows
+        setTimeout(() => { gallery.classList.remove('is-seq-hidden'); }, 4000);
+      }
+      // Auto-remove after max duration
+      setTimeout(() => { wrap.remove(); }, 15000);
+      try { localStorage.setItem(CELEBRATE_KEY, 'true'); } catch(_) {}
+    } catch (_) {}
   }
 
   function tryPlay() {
@@ -375,11 +440,26 @@
     gallery.appendChild(frag);
   }
 
+  // Initial sequence setup to avoid flashes
+  (function initSequenceSetup(){
+    if (firstVisit) {
+      hero && hero.classList.add('is-seq-hidden', 'is-centered', 'is-pre');
+      gallery && gallery.classList.add('is-seq-hidden');
+    } else {
+      hero && hero.classList.remove('is-seq-hidden', 'is-centered', 'is-pre');
+      gallery && gallery.classList.remove('is-seq-hidden');
+    }
+    // Remove preload class as soon as initial state is set
+    docEl && docEl.classList.remove('preload');
+  })();
+
   // Randomize existing tiles order on initial load
   shuffleGalleryDOM();
   items = buildItemsFromDOM();
   // If bonus already unlocked, show button; otherwise check progress
   updateBonusVisibility();
+  // First-visit sequence: hide sections and run celebration
+  try { if (firstVisit) { triggerCelebration(); } } catch (_) {}
   loadManifest();
   // Rotate quotes smoothly every N ms
   if (heroQuote && Array.isArray(window.QUOTES) && window.QUOTES.length) {
