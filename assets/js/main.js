@@ -177,16 +177,14 @@
       document.body.appendChild(wrap);
       // Sequential reveal: hero then gallery, while celebration continues
       if (hero) {
-        setTimeout(() => { hero.classList.remove('is-seq-hidden'); }, 1200);
-        // Reveal actions, then gently transition header to top
-        setTimeout(() => { hero.classList.remove('is-pre'); }, 2000);
-        // Fade out, switch layout, fade in to avoid jump
-        setTimeout(() => { hero.classList.add('is-fade-out'); }, 3000);
-        setTimeout(() => { hero.classList.remove('is-centered'); hero.classList.remove('is-fade-out'); }, 3550);
+        setTimeout(() => { hero.classList.remove('is-seq-hidden'); }, 2400);
+        // Reveal actions, then smoothly move hero upward by removing centering (transform transition)
+        setTimeout(() => { hero.classList.remove('is-pre'); }, 4000);
+        setTimeout(() => { hero.classList.remove('is-centered'); }, 5200);
       }
       if (gallery) {
-        // 4s delay before video grid shows
-        setTimeout(() => { gallery.classList.remove('is-seq-hidden'); }, 4000);
+        // 8s delay before video grid shows (slowed 2×)
+        setTimeout(() => { gallery.classList.remove('is-seq-hidden'); }, 8000);
       }
       // Auto-remove after max duration
       setTimeout(() => { wrap.remove(); }, 15000);

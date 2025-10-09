@@ -56,14 +56,7 @@ body::after {
 
 /* Hero */
 .hero { padding: 24px 20px 12px; text-align: center; position: relative; z-index: 2; }
-.hero.is-centered {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  z-index: 6;
-  padding: 24px 20px; /* equal paddings when centered */
-}
+.hero.is-centered { transform: translateY(28vh); }
 .hero__top { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
 .hero__title {
   margin: 0 0 8px;
