@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Фокус на главном">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 77.33346637811337 320 Q 110 240 183.91737971862312 280 T 333.7508002609684 300" stroke="#6ea8fe" stroke-width="4"/>
+    <circle cx="240.88838393821788" cy="152.94227794816834" r="34" stroke="#ffd666" stroke-width="5" fill="none"/>
+    <path d="M 317.67833445428096 121.50487226594123 L 347.67833445428096 121.50487226594123 M 339.67833445428096 113.50487226594123 L 347.67833445428096 121.50487226594123 L 339.67833445428096 129.50487226594123" stroke="#f4f6fb" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f4f6fb" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Фокус на главном</tspan>
+  </text>
+</svg>

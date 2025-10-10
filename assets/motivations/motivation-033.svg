@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Энергия в движении">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 37.116064360343444 320 Q 110 240 213.07444800953817 280 T 339.60169769059576 300" stroke="#9fe2bf" stroke-width="4"/>
+    <circle cx="130.75173652207013" cy="174.74665720019402" r="30" stroke="#ffc785" stroke-width="5" fill="none"/>
+    <path d="M 316.77039886140847 127.89628760932828 L 346.77039886140847 127.89628760932828 M 338.77039886140847 119.89628760932828 L 346.77039886140847 127.89628760932828 L 338.77039886140847 135.89628760932828" stroke="#f5f7ff" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f5f7ff" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Энергия в движении</tspan>
+  </text>
+</svg>

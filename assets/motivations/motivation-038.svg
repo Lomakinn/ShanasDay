@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Ты не один">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 71.14722563120267 320 Q 110 240 218.15451363509055 280 T 342.1037123906717 300" stroke="#8ad6ff" stroke-width="4"/>
+    <circle cx="265.5948686984084" cy="181.38083374651615" r="24" stroke="#ffb870" stroke-width="5" fill="none"/>
+    <path d="M 251.34757378950354 122.11472047110874 L 281.34757378950354 122.11472047110874 M 273.34757378950354 114.11472047110874 L 281.34757378950354 122.11472047110874 L 273.34757378950354 130.11472047110874" stroke="#e8ecf7" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#e8ecf7" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Ты не один</tspan>
+  </text>
+</svg>

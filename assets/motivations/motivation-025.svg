@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Время — тебе союзник">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 58.94994133617729 320 Q 110 240 203.38019184113364 280 T 304.44295729816076 300" stroke="#6ea8fe" stroke-width="4"/>
+    <circle cx="93.89193888568116" cy="176.44631481300166" r="30" stroke="#ffd666" stroke-width="5" fill="none"/>
+    <path d="M 293.648273854501 136.008745014351 L 323.648273854501 136.008745014351 M 315.648273854501 128.008745014351 L 323.648273854501 136.008745014351 L 315.648273854501 144.008745014351" stroke="#f4f6fb" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f4f6fb" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Время — тебе союзник</tspan>
+  </text>
+</svg>

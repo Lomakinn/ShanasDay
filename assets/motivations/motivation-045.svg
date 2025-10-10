@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Расти через действие">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 32.11472047110874 320 Q 110 240 215.33905952368514 280 T 306.1263528655945 300" stroke="#9fe2bf" stroke-width="4"/>
+    <circle cx="188.81282319962338" cy="168.9388962112571" r="24" stroke="#ffc785" stroke-width="5" fill="none"/>
+    <path d="M 270.4230903623193 136.5552242911508 L 300.4230903623193 136.5552242911508 M 292.4230903623193 128.5552242911508 L 300.4230903623193 136.5552242911508 L 292.4230903623193 144.5552242911508" stroke="#f5f7ff" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f5f7ff" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Расти через действие</tspan>
+  </text>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Верить и делать">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 46.24919973903161 320 Q 110 240 206.81473065636965 280 T 345.5865830777475 300" stroke="#9fe2bf" stroke-width="4"/>
+    <circle cx="290.8163770803367" cy="188.67333397387483" r="20" stroke="#ffc785" stroke-width="5" fill="none"/>
+    <path d="M 258.9272598266598 166.32579777141018 L 288.9272598266598 166.32579777141018 M 280.9272598266598 158.32579777141018 L 288.9272598266598 166.32579777141018 L 280.9272598266598 174.32579777141018" stroke="#f5f7ff" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f5f7ff" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Верить и делать</tspan>
+  </text>
+</svg>

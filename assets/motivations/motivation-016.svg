@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Сравнивай с собой">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 88.01000096081225 320 Q 110 240 181.00324817729415 280 T 342.3480630057202 300" stroke="#6ea8fe" stroke-width="4"/>
+    <circle cx="265.3031910856407" cy="168.10029105108697" r="28" stroke="#ffd666" stroke-width="5" fill="none"/>
+    <path d="M 284.083496717287 167.75749489766895 L 314.083496717287 167.75749489766895 M 306.083496717287 159.75749489766895 L 314.083496717287 167.75749489766895 L 306.083496717287 175.75749489766895" stroke="#f4f6fb" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f4f6fb" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Сравнивай с собой</tspan>
+  </text>
+</svg>

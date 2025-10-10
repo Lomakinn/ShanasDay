@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Смелость — это действие">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 88.50281524310049 320 Q 110 240 210.2901347446459 280 T 299.29891935550586 300" stroke="#6ea8fe" stroke-width="4"/>
+    <circle cx="287.8369250937976" cy="173.2986493527278" r="22" stroke="#ffd666" stroke-width="5" fill="none"/>
+    <path d="M 305.22237744113227 125.87606957793469 L 335.22237744113227 125.87606957793469 M 327.22237744113227 117.87606957793469 L 335.22237744113227 125.87606957793469 L 327.22237744113227 133.8760695779347" stroke="#f4f6fb" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f4f6fb" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Смелость — это действие</tspan>
+  </text>
+</svg>

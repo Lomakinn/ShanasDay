@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Загрузка видео</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg?v=1" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=3" />
+    <style>
+      .u-wrap { width: min(960px, 96%); margin: 24px auto 48px; padding: 0 8px; }
+      .u-toolbar { display:flex; gap:12px; align-items:center; justify-content:center; margin: 12px 0 16px; flex-wrap: wrap; }
+      .u-drop {
+        margin: 12px auto 16px; padding: 24px; border: 2px dashed var(--tile-ring);
+        border-radius: 14px; color: var(--muted); text-align: center; background: rgba(20,24,44,.45);
+      }
+      .u-drop.is-dragover { border-color: var(--accent); background: rgba(40,60,120,.25); }
+      .u-list { list-style: none; padding: 0; margin: 18px 0 0; }
+      .u-item { display:flex; align-items:center; gap:12px; padding:10px 12px; border:1px solid var(--tile-ring); border-radius:10px; background: rgba(0,0,0,.2); margin-bottom:8px; }
+      .u-badge { font-size:12px; padding: 2px 8px; border-radius:999px; border:1px solid var(--tile-ring); background: rgba(255,255,255,0.06); color: var(--muted); }
+      .u-item strong { font-weight:600; }
+      .u-item small { color: var(--muted); }
+      .u-actions { display:flex; gap:10px; justify-content:center; margin-top:16px; flex-wrap: wrap; }
+      .u-hint { color: var(--muted); text-align:center; margin-top: 10px; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <canvas id="sky" class="sky" aria-hidden="true"></canvas>
+    <header class="hero" role="banner">
+      <div class="hero__top">
+        <h1 class="hero__title">Загрузка видео</h1>
+      </div>
+      <p class="hero__subtitle">Поддерживаемые форматы и ограничение размера ≤ 50 МБ</p>
+      <div class="hero__actions">
+        <a class="music-toggle" href="index.html">
+          <span class="music-toggle__icon" aria-hidden="true">←</span>
+          <span class="music-toggle__text">На главную</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="u-wrap">
+        <div class="u-toolbar">
+          <label class="music-toggle" for="uInput">
+            <span class="music-toggle__icon" aria-hidden="true">📁</span>
+            <span class="music-toggle__text">Выбрать файлы</span>
+          </label>
+          <input id="uInput" type="file" accept="video/*" multiple hidden />
+          <button id="uPickDir" class="music-toggle" type="button" title="Выбрать папку для сохранения">
+            <span class="music-toggle__icon" aria-hidden="true">📂</span>
+            <span class="music-toggle__text">Выбрать папку сохранения</span>
+          </button>
+          <button id="uSave" class="music-toggle" type="button" title="Сохранить прошедшие проверку" disabled>
+            <span class="music-toggle__icon" aria-hidden="true">💾</span>
+            <span class="music-toggle__text">Сохранить</span>
+          </button>
+        </div>
+
+        <div id="uDrop" class="u-drop" tabindex="0">
+          Перетащите сюда файлы видео или используйте кнопку «Выбрать»
+          <div class="u-hint">Допустимые — только воспроизводимые браузером. Максимум 50 МБ на файл.</div>
+        </div>
+
+        <ul id="uList" class="u-list" aria-live="polite"></ul>
+        <div class="u-hint" id="uHint2">Сохранение напрямую в папку проекта доступно в современных браузерах (File System Access API). Иначе — сохраните вручную в assets/videos/.</div>
+      </div>
+    </main>
+
+    <script defer src="assets/js/upload.js?v=1"></script>
+  </body>
+  </html>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Сохраняй ритм">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 57.203205799905845 320 Q 110 240 198.9388962112571 280 T 334.91222235727037 300" stroke="#9fe2bf" stroke-width="4"/>
+    <circle cx="150.02202409938036" cy="161.03681619410054" r="24" stroke="#ffc785" stroke-width="5" fill="none"/>
+    <path d="M 257.6658038686037 146.89598482807924 L 287.6658038686037 146.89598482807924 M 279.6658038686037 138.89598482807924 L 287.6658038686037 146.89598482807924 L 279.6658038686037 154.89598482807924" stroke="#f5f7ff" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f5f7ff" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Сохраняй ритм</tspan>
+  </text>
+</svg>

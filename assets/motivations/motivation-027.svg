@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Сила в привычках">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 75.55704270183924 320 Q 110 240 182.31532314761353 280 T 310.3305277804975 300" stroke="#9fe2bf" stroke-width="4"/>
+    <circle cx="244.10217713171733" cy="174.94187077400056" r="24" stroke="#ffc785" stroke-width="5" fill="none"/>
+    <path d="M 258.30207508706735 169.61167201430726 L 288.30207508706735 169.61167201430726 M 280.30207508706735 161.61167201430726 L 288.30207508706735 169.61167201430726 L 280.30207508706735 177.61167201430726" stroke="#f5f7ff" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f5f7ff" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Сила в привычках</tspan>
+  </text>
+</svg>

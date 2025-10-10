@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Соберись">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 40.398302309404244 320 Q 110 240 188.45862275367836 280 T 312.88001419970897 300" stroke="#8ad6ff" stroke-width="4"/>
+    <circle cx="244.5889025248107" cy="188.15451363509055" r="22" stroke="#ffb870" stroke-width="5" fill="none"/>
+    <path d="M 304.13183670370245 167.07125061977422 L 334.13183670370245 167.07125061977422 M 326.13183670370245 159.07125061977422 L 334.13183670370245 167.07125061977422 L 326.13183670370245 175.07125061977422" stroke="#e8ecf7" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#e8ecf7" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Соберись</tspan>
+  </text>
+</svg>

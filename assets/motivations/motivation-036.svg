@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Вдох — и вперёд">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 42.68793413051753 320 Q 110 240 204.74665720019402 280 T 308.8527743687973 300" stroke="#9fe2bf" stroke-width="4"/>
+    <circle cx="308.9270818105433" cy="155.2641917395522" r="32" stroke="#ffc785" stroke-width="5" fill="none"/>
+    <path d="M 304.91645905640326 135.15442284100573 L 334.91645905640326 135.15442284100573 M 326.91645905640326 127.15442284100573 L 334.91645905640326 135.15442284100573 L 326.91645905640326 143.15442284100573" stroke="#f5f7ff" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f5f7ff" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Вдох — и вперёд</tspan>
+  </text>
+</svg>

@@ -13,6 +13,8 @@
   const volumeWrap = document.getElementById('musicVolumeWrap');
   const volumeInput = document.getElementById('musicVolume');
   const volumeValue = document.getElementById('musicVolumeValue');
+  // Remove upload button from header if present
+  try { const up = document.querySelector('a[href="upload.html"]'); if (up) up.remove(); } catch(_) {}
   // Bonus video config and persistent state
   const BONUS_SRC = 'assets/videos/bonus/bonus.mp4';
   const BONUS_UNLOCK_KEY = 'bonusUnlocked';

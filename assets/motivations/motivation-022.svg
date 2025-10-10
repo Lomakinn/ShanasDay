@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Выбирай лучшее действие">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 59.214425757674576 320 Q 110 240 211.8383299317793 280 T 337.0172039743193 300" stroke="#6ea8fe" stroke-width="4"/>
+    <circle cx="195.79976534470916" cy="173.38019184113364" r="32" stroke="#ffd666" stroke-width="5" fill="none"/>
+    <path d="M 254.05181550832367 159.6694722195025 L 284.05181550832367 159.6694722195025 M 276.05181550832367 151.6694722195025 L 284.05181550832367 159.6694722195025 L 276.05181550832367 167.6694722195025" stroke="#f4f6fb" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f4f6fb" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Выбирай лучшее действие</tspan>
+  </text>
+</svg>

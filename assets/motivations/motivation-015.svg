@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Дисциплина = свобода">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 82.70409427008417 320 Q 110 240 218.67333397387483 280 T 348.49512773405877 300" stroke="#9fe2bf" stroke-width="4"/>
+    <circle cx="110.60774797711929" cy="180.88386518094012" r="27" stroke="#ffc785" stroke-width="5" fill="none"/>
+    <path d="M 288.94697523919604 149.21442575767458 L 318.94697523919604 149.21442575767458 M 310.94697523919604 141.21442575767458 L 318.94697523919604 149.21442575767458 L 310.94697523919604 157.21442575767458" stroke="#f5f7ff" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f5f7ff" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Дисциплина = свобода</tspan>
+  </text>
+</svg>

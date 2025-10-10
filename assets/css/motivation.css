@@ -1,0 +1,29 @@
+/* Motivation page layout */
+.m-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 16px 20px 48px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.m-card {
+  background: var(--tile-bg);
+  border: 1px solid var(--tile-ring);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  display: grid;
+}
+
+.m-card__svg { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; }
+.m-card__meta { display: none; }
+
+@media (min-width: 720px) {
+  .m-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+  .m-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+

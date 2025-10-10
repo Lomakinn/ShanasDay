@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Становись лучше на 1%">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 80.70108064449414 320 Q 110 240 214.63948751563294 280 T 315.0520259709083 300" stroke="#9fe2bf" stroke-width="4"/>
+    <circle cx="124.36458021576982" cy="181.55564425207558" r="21" stroke="#ffc785" stroke-width="5" fill="none"/>
+    <path d="M 268.9573996955369 160.22209598455447 L 298.9573996955369 160.22209598455447 M 290.9573996955369 152.22209598455447 L 298.9573996955369 160.22209598455447 L 290.9573996955369 168.22209598455447" stroke="#f5f7ff" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f5f7ff" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Становись лучше на 1%</tspan>
+  </text>
+</svg>

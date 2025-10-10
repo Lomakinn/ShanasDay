@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Прогресс &gt; перфекционизм">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 83.0085892855277 320 Q 110 240 209.24909808960365 280 T 322.79679420009415 300" stroke="#6ea8fe" stroke-width="4"/>
+    <circle cx="193.63337726754253" cy="160.05851842848642" r="24" stroke="#ffd666" stroke-width="5" fill="none"/>
+    <path d="M 269.31442833967594 135.09010910050165 L 299.31442833967594 135.09010910050165 M 291.31442833967594 127.09010910050165 L 299.31442833967594 135.09010910050165 L 291.31442833967594 143.09010910050165" stroke="#f4f6fb" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f4f6fb" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Прогресс &gt; перфекционизм</tspan>
+  </text>
+</svg>

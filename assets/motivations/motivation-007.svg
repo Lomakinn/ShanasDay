@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Вперёд, несмотря ни на что">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 81.9592312734494 320 Q 110 240 203.2986493527278 280 T 338.90885494605755 300" stroke="#6ea8fe" stroke-width="4"/>
+    <circle cx="269.3338655124535" cy="153.91737971862312" r="24" stroke="#ffd666" stroke-width="5" fill="none"/>
+    <path d="M 296.9257786486469 124.41341692225251 L 326.9257786486469 124.41341692225251 M 318.9257786486469 116.41341692225251 L 326.9257786486469 124.41341692225251 L 318.9257786486469 132.4134169222525" stroke="#f4f6fb" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f4f6fb" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Вперёд, несмотря ни на что</tspan>
+  </text>
+</svg>

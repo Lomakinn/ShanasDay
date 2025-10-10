@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Выдержка — ключ">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 31.155063248145893 320 Q 110 240 181.40981364740583 280 T 296.9914107144723 300" stroke="#8ad6ff" stroke-width="4"/>
+    <circle cx="255.4945885376219" cy="168.13547053327056" r="27" stroke="#ffb870" stroke-width="5" fill="none"/>
+    <path d="M 267.60240724985124 137.5055060248451 L 297.60240724985124 137.5055060248451 M 289.60240724985124 129.5055060248451 L 297.60240724985124 137.5055060248451 L 289.60240724985124 145.5055060248451" stroke="#e8ecf7" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#e8ecf7" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Выдержка — ключ</tspan>
+  </text>
+</svg>

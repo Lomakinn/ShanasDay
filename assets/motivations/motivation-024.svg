@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Учись постоянно">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 42.98279602568073 320 Q 110 240 199.29996089078486 280 T 314.92971223829954 300" stroke="#9fe2bf" stroke-width="4"/>
+    <circle cx="262.22817080735695" cy="152.31532314761353" r="30" stroke="#ffc785" stroke-width="5" fill="none"/>
+    <path d="M 297.8631349967509 157.41280616100084 L 327.8631349967509 157.41280616100084 M 319.8631349967509 149.41280616100084 L 327.8631349967509 157.41280616100084 L 319.8631349967509 165.41280616100084" stroke="#f5f7ff" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f5f7ff" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Учись постоянно</tspan>
+  </text>
+</svg>

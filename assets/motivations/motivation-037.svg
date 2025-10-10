@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Лучшее впереди">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 67.11998580029103 320 Q 110 240 207.43148375413512 280 T 292.7682295473642 300" stroke="#6ea8fe" stroke-width="4"/>
+    <circle cx="111.58515043731313" cy="180.9324781164014" r="32" stroke="#ffd666" stroke-width="5" fill="none"/>
+    <path d="M 267.68015998117335 121.1550632481459 L 297.68015998117335 121.1550632481459 M 289.68015998117335 113.1550632481459 L 297.68015998117335 121.1550632481459 L 289.68015998117335 129.1550632481459" stroke="#f4f6fb" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f4f6fb" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Лучшее впереди</tspan>
+  </text>
+</svg>

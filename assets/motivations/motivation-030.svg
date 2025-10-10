@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Будь добрее к себе">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 71.02554428292933 320 Q 110 240 204.94187077400056 280 T 333.991254985649 300" stroke="#9fe2bf" stroke-width="4"/>
+    <circle cx="108.46425744137377" cy="183.07444800953817" r="22" stroke="#ffc785" stroke-width="5" fill="none"/>
+    <path d="M 264.8025898189371 157.11998580029103 L 294.8025898189371 157.11998580029103 M 286.8025898189371 149.11998580029103 L 294.8025898189371 157.11998580029103 L 286.8025898189371 165.11998580029103" stroke="#f5f7ff" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f5f7ff" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Будь добрее к себе</tspan>
+  </text>
+</svg>

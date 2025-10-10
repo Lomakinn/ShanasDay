@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Лёгкость в важном">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 58.40834431688563 320 Q 110 240 190.05851842848642 280 T 332.4944939751549 300" stroke="#6ea8fe" stroke-width="4"/>
+    <circle cx="146.22089716460323" cy="160.06007273366777" r="21" stroke="#ffd666" stroke-width="5" fill="none"/>
+    <path d="M 281.37864896609244 149.39874785290158 L 311.37864896609244 149.39874785290158 M 303.37864896609244 141.39874785290158 L 311.37864896609244 149.39874785290158 L 303.37864896609244 157.39874785290158" stroke="#f4f6fb" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#f4f6fb" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Лёгкость в важном</tspan>
+  </text>
+</svg>

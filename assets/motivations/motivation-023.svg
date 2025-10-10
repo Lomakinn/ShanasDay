@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Сделай сегодня">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 77.75749489766895 320 Q 110 240 188.65519735045382 280 T 321.0500586638227 300" stroke="#8ad6ff" stroke-width="4"/>
+    <circle cx="220.28115104680182" cy="180.37136180122616" r="20" stroke="#ffb870" stroke-width="5" fill="none"/>
+    <path d="M 296.2810509227529 161.02554428292933 L 326.2810509227529 161.02554428292933 M 318.2810509227529 153.02554428292933 L 326.2810509227529 161.02554428292933 L 318.2810509227529 169.02554428292933" stroke="#e8ecf7" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#e8ecf7" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Сделай сегодня</tspan>
+  </text>
+</svg>

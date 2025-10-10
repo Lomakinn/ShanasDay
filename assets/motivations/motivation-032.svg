@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Создавай ценность">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 46.00874501435101 320 Q 110 240 184.74404290689563 280 T 300.38832798569274 300" stroke="#8ad6ff" stroke-width="4"/>
+    <circle cx="121.59320923761697" cy="158.45862275367836" r="29" stroke="#ffb870" stroke-width="5" fill="none"/>
+    <path d="M 298.00509656973645 177.23177045263583 L 328.00509656973645 177.23177045263583 M 320.00509656973645 169.23177045263583 L 328.00509656973645 177.23177045263583 L 320.00509656973645 185.23177045263583" stroke="#e8ecf7" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#e8ecf7" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Создавай ценность</tspan>
+  </text>
+</svg>

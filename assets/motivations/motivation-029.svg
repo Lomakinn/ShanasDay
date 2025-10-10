@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Путь — это процесс">
+  <rect x="0" y="0" width="400" height="500" fill="transparent"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 69.6694722195025 320 Q 110 240 207.35036285528622 280 T 312.58719383899916 300" stroke="#8ad6ff" stroke-width="4"/>
+    <circle cx="144.03498005740403" cy="154.74404290689563" r="33" stroke="#ffb870" stroke-width="5" fill="none"/>
+    <path d="M 262.13135269430495 132.68793413051753 L 292.13135269430495 132.68793413051753 M 284.13135269430495 124.68793413051753 L 292.13135269430495 132.68793413051753 L 284.13135269430495 140.68793413051753" stroke="#e8ecf7" stroke-width="4"/>
+  </g>
+  <text x="24" y="380" fill="#e8ecf7" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    <tspan x="24" dy="0">Путь — это процесс</tspan>
+  </text>
+</svg>
