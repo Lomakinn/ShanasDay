@@ -403,5 +403,20 @@
     "title": "От Дамира",
     "video": "assets/videos/От Дамира.mp4",
     "poster": "assets/photos/От Дамира.jpg"
+  },
+  {
+    "title": "От Алёны Козловой",
+    "video": "assets/videos/От Алёны Козловой.mp4",
+    "poster": "assets/photos/От Алёны Козловой.jpg"
+  },
+  {
+    "title": "От Немо и Надежды",
+    "video": "assets/videos/От Немо и Надежды.mp4",
+    "poster": "assets/photos/От Немо и Надежды.jpg"
+  },
+  {
+    "title": "От ПУЛИ",
+    "video": "assets/videos/От ПУЛИ.mp4",
+    "poster": "assets/photos/От ПУЛИ.jpg"
   }
 ]
